@@ -1,0 +1,12 @@
+name: DeskyPlugin
+version: 1.0
+main: dev.benchurchill.desky.DeskyPlugin
+api-version: 1.20
+
+commands:
+  office:
+    description: Office command
+    permission: desky.office
+  desk:
+    description: Desk command
+    permission: desky.desk

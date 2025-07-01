@@ -5,26 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4c0ffef-1d93-49b6-9818-653b1dc2cf5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/DeskyPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/loader/OfficeLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/manager/OfficeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/office/Desk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/office/ElementType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/office/Office.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/office/OfficeElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/annotations/RootCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/DeskyCommandManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/DeskyCommandResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/EDeskyCommandResultStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/IDeskyCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/IDeskySubCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/impl/goodbye/Goodbye.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/impl/hello/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/commands/parser/ArgumentParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/DeskyPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/DeskyPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/annotations/CommandInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/annotations/CommandInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/BaseCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/CommandContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/CommandManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/DeskyCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/commands/AbstractCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/commands/desk/DeskCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/commands/desk/book/DeskBookCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/benchurchill/desky/command/commands/office/OfficeCommand.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +57,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2z8lBFGRK6fr8VKXrOduMnso5MJ" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -78,14 +82,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Desky [:Main.main()].executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
-    "onboarding.tips.debug.path": "C:/Users/bench/OneDrive/Documents/Projects/Minecraft/Plugins/Games/Desky/src/main/java/dev/benchurchill/desky/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/bench/OneDrive/Documents/Projects/Minecraft/Plugins/Games/Desky/src/main/java/dev/benchurchill/desky/Main.java",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.benchurchill.desky.commands" />
+      <recent name="dev.benchurchill.desky.commands.impl.goodbye" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="UNNAMED_CLASS_CONFIGURATION" value="true" />

@@ -9,7 +9,9 @@ public @interface CommandInfo {
 
     String[] aliases() default {};
 
-    String permission() default "";
+    String description() default "";
 
-    String parent() default ""; // for subcommands
+    String usage() default "";
+
+    String permission() default "";
 }

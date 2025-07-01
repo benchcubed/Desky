@@ -7,6 +7,7 @@ import dev.benchurchill.desky.office.Office;
 import dev.benchurchill.desky.office.OfficeElement;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.World;
 
 import java.io.*;
@@ -37,10 +38,11 @@ public class OfficeLoader {
 
             OfficeElement element = switch (ElementType.valueOf(type)) {
                 case DESK -> new Desk(elemId, loc, id);
-                default -> throw new IllegalArgumentException("Unknown type: " + type);
+                default -> throw new IllegalArgumentException("Unknown element type: " + type);
             };
 
             office.addElement(element);
+            element.getLocation().getBlock().setType(Material.ACACIA_SLAB);
         }
 
         return office;
